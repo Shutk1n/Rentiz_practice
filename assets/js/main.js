@@ -30,3 +30,23 @@ if (filter) {
     })
   })
 }
+
+//------Swiper
+
+const swiper = new Swiper('.popular-slider', {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3
+    },
+    640: {
+      slidesPerView: 2
+    }
+  }
+});
