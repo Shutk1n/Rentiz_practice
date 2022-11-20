@@ -542,6 +542,30 @@ body {
     margin-top: 40px;
     position: relative;
   }
+
+  &__link {
+    text-align: center;
+    margin-top: 65px;
+  }
+
+  &__link a {
+    display: inline-block;
+    padding: 22px 42px;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: auto 0;
+    background-color: var(--accent-color);
+    transition: .2s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #0E6056;
+      }
+    }
+  }
 }
 
 .swiper-slide {}

@@ -352,6 +352,24 @@ body._lock {
   margin-top: 40px;
   position: relative;
 }
+.popular__link {
+  text-align: center;
+  margin-top: 65px;
+}
+.popular__link a {
+  display: inline-block;
+  padding: 22px 42px;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: auto 0;
+  background-color: var(--accent-color);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
 
 .popular-slide {
   display: -webkit-box;
@@ -602,5 +620,8 @@ body._lock {
   }
   .block-filter__item:hover {
     background-color: #adadad;
+  }
+  .popular__link a:hover {
+    background-color: #0E6056;
   }
 }
