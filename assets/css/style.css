@@ -437,12 +437,12 @@ body._lock {
   cursor: pointer;
 }
 
-.swiper-button-prev {
+.popular-slider-prev {
   position: absolute;
   left: -130px;
 }
 
-.swiper-button-next {
+.popular-slider-next {
   position: absolute;
   right: -130px;
   -webkit-transform: rotate(180deg);
@@ -451,6 +451,164 @@ body._lock {
 }
 
 /*-------/Swiper--------*/
+/*-------Why--------*/
+.why__container {
+  padding-top: clamp(1.875rem, -0.852rem + 13.64vw, 11.25rem);
+  padding-bottom: clamp(1.875rem, 0.693rem + 5.91vw, 5.938rem);
+}
+.why__title {
+  text-align: center;
+}
+.why__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: clamp(1.875rem, 1.33rem + 2.73vw, 3.75rem);
+  gap: clamp(1.25rem, 0.705rem + 10vw, 3.125rem);
+}
+.item-why {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 26.4788732394%;
+          flex: 0 0 26.4788732394%;
+}
+.item-why__img {
+  width: clamp(6.25rem, 4.795rem + 7.27vw, 11.25rem);
+  aspect-ratio: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-bottom: clamp(1.563rem, 1.362rem + 1vw, 2.25rem);
+}
+.item-why__img:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  background-color: var(--accent-color);
+  opacity: 0.12;
+}
+.item-why__img svg {
+  width: 40%;
+  height: 40%;
+}
+.item-why__title {
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
+.item-why__text {
+  margin-top: 10px;
+}
+
+/*-------/Why--------*/
+/*-------Reviews--------*/
+.reviews {
+  position: relative;
+}
+.reviews .reviews-deco {
+  position: absolute;
+  top: -520px;
+  left: 0;
+  z-index: -1;
+}
+.reviews .swiper-wrapper {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.reviews__container {
+  max-width: 1020px;
+  margin: 0px auto;
+  position: relative;
+  padding-top: 195px;
+}
+.reviews__quotes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 260px;
+  text-transform: capitalize;
+  color: var(--accent-color);
+}
+.slider-reviews__text {
+  font-size: clamp(1.25rem, 1.032rem + 1.09vw, 2rem);
+  line-height: 1.57;
+  text-transform: capitalize;
+}
+.slider-reviews__info {
+  margin-top: 40px;
+}
+.slider-reviews__name {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
+.slider-reviews__buttons {
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 70px;
+  width: 115px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+.slider-reviews__buttons:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  background: #767F89;
+  width: 1px;
+}
+
+.slider-reviews-btn.swiper-button-disabled svg {
+  fill: #767F89;
+}
+.slider-reviews-btn svg {
+  fill: #fff;
+}
+
+.slider-reviews-prev {
+  -webkit-transform: translateY(-2px) rotate(180deg);
+      -ms-transform: translateY(-2px) rotate(180deg);
+          transform: translateY(-2px) rotate(180deg);
+}
+
+/*-------/Reviews--------*/
 
 @media (min-width: 768px) and (max-width: 992px) {
   .hero__img {
@@ -554,6 +712,15 @@ body._lock {
   .hero__filter {
     width: 100%;
     position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .why__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

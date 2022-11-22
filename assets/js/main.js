@@ -33,13 +33,13 @@ if (filter) {
 
 //------Swiper
 
-const swiper = new Swiper('.popular-slider', {
+const popularSlider = new Swiper('.popular-slider', {
   spaceBetween: 20,
   slidesPerView: 1,
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.popular-slider-next',
+    prevEl: '.popular-slider-prev',
   },
   breakpoints: {
     992: {
@@ -49,4 +49,14 @@ const swiper = new Swiper('.popular-slider', {
       slidesPerView: 2
     }
   }
+});
+
+const reviewsSlider = new Swiper('.slider-reviews', {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  autoHeight: true,
+  navigation: {
+    nextEl: '.slider-reviews-next',
+    prevEl: '.slider-reviews-prev',
+  },
 });
